@@ -51,12 +51,13 @@
 
 .navigation {
     background-color: var(--dark-slate-gray);
-    margin-bottom: 25px;
-    padding: 35px 62px 39px 131px;
+    padding: 35px 62px 39px 300px;
     display: flex;
     align-items: flex-start;
     height: 120px;
     width: 2900px;
+    margin: 0 auto;
+    max-width: 2735px
 }
 
 .polaris-text {
@@ -80,16 +81,7 @@
     font-weight: var(--inria-sans-25-regular-weight);
     line-height: var(--inria-sans-25-regular-line-height);
 }
-.contacts-text {
-    color: var(--white);
-    text-align: center;
-    margin-top: 14px;
-    margin-right: 246px;
-    font-family: var(--inria-sans-25-regular-family);
-    font-size: var(--inria-sans-25-regular-size);
-    font-weight: var(--inria-sans-25-regular-weight);
-    line-height: var(--inria-sans-25-regular-line-height);
-}
+
 .search-box {
     width: 45px;
     height: 45px;
@@ -99,11 +91,12 @@
     ),
     url("../img/search.png");
     background-size: 100% 100%;
-    background-position: center;
+    margin-left: 1000px;
     margin-top: 4px;
     margin-right: 62px;
     border-radius: 10px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.25);
+
 }
 .vk-tg-icon {
     width: 45px;
@@ -117,13 +110,13 @@
 }
 .about-us-box {
     background-color: var(--black);
-    margin-bottom: 19px;
-    margin-left: 106px;
     border-radius: 10px;
     padding: 26px 21px 602px 22px;
     display: flex;
     align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
+    margin: 20px auto;
+    max-width: 2000px
 }
 .about-us-text {
     height: 104px;
@@ -137,15 +130,16 @@
 }
 .footer {
     background-color: var(--dark-slate-gray-2);
-    padding: 23px 603px 55px;
+    padding: 23px 60px 55px;
     display: flex;
     align-items: flex-start;
-    width: 2900px;
-    height: 100px;
+    width: 2735px;
+    height:auto;
+
 }
 .all-rights-reserved {
     height: 38px;
-    width: 234px;
+    width: 236px;
     color: var(--white);
     display: flex;
     text-align: center;
@@ -153,23 +147,26 @@
     font-size: var(--inika-20-regular-size);
     font-weight: var(--inika-20-regular-weight);
     line-height: var(--inika-20-regular-line-height);
+    max-width: 2735px;
+    margin: 0 auto;
 }
-.group-1 {
+.contacts-box {
     background-size: 100% 100%;
     background-position: center;
     background-color: var(--dark-slate-gray-2) ;
-    margin-bottom: 217px;
-    margin-left: 106px;
     border-radius: 10px;
+    border: 1px solid var(--dark-slate-gray);
     padding: 23px 23px 36px 22px;
     display: flex;
     align-items: flex-start;
-    border: 1px solid var(--dark-slate-gray);
+    width: 1000px;
+    margin: 20px auto auto auto;
+    justify-content: center;
 }
 
 .contacts-text {
     height: 475px;
-    width: 865px;
+    width: 800px;
     color: var(--white);
     display: flex;
     font-family: var(--inria-sans-26-regular-family);
@@ -188,10 +185,11 @@
 }
 
 .post-add-post-positioning {
-    margin-bottom: 57px;
     padding: 0 0 0 90px;
     display: flex;
     align-items: flex-start;
+    max-width: 2735px;
+    margin: 20px auto 20px;
 }
 
 .add-post-box {
@@ -201,6 +199,8 @@
     display: flex;
     align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
+    margin: 0 auto;
+    max-width: 2000px
 }
 
 .post-box {
@@ -214,16 +214,22 @@
     border: 1px solid var(--dark-slate-gray);
 }
 
-.post-two {
+@media (min-width: 544px) {
+    .post-box{
+        background-color: red;
+    }
+}
+
+#post-box-two {
     background-color: var(--black);
-    margin-bottom: 100px;
-    margin-left: 90px;
     border-radius: 10px;
     padding: 19px 18px 19px 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
+    max-width: 2000px;
+    margin: 100px 1256px 20px auto;
 }
 
 .avatar {
@@ -231,6 +237,7 @@
     height: 45px;
     background-color: rgba(217, 217, 217, 1);
     border-radius: 50%;
+    margin-right: 10px;
 }
 .author-name-text {
     height: 41px;
@@ -276,13 +283,13 @@
     line-height: var(--inria-sans-43-regular-line-height);
 }
 
-.flex-wrapper-four {
+.top-side-of-post {
     margin-bottom: 55px;
     display: flex;
     align-items: flex-start;
 }
 
-.relative-wrapper-one {
+.bottom-side-of-post {
     margin-left: 13px;
     position: relative;
 }
