@@ -271,13 +271,6 @@ footer {
     line-height: var(--inria-sans-26-regular-line-height);
 }
 
-.avatar {
-    width: 45px;
-    height: 45px;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 50%;
-}
-
 .title {
     color: var(--white);
     text-align: center;
