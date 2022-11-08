@@ -26,6 +26,11 @@
     --inria-sans-26-regular-weight: 400;
     --inria-sans-26-regular-line-height: normal;
 
+    --inria-sans-20-regular-family: "Inria Sans";
+    --inria-sans-20-regular-size: 20px;
+    --inria-sans-20-regular-weight: 400;
+    --inria-sans-20-regular-line-height: normal;
+
     /* inria-sans-43-regular */
     --inria-sans-43-regular-family: "Inria Sans";
     --inria-sans-43-regular-size: 43px;
@@ -323,5 +328,74 @@ footer {
 
     .post-add-post-positioning {
         column-gap: 10px;
+    }
+}
+
+@media (max-width: 920px) {
+    .post-add-post-positioning {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-post-box {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .post-box {
+        max-width: 90%;
+    }
+
+    .post-box-two {
+        max-width: 86%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .add-post-box {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .post-box {
+        max-width: 70%;
+    }
+
+    .post-box-two {
+        max-width: 67%;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .author-name-text {
+        font-family: var(--inria-sans-20-regular-family);
+        font-size: var(--inria-sans-20-regular-size);
+        font-weight: var(--inria-sans-20-regular-weight);
+        line-height: var(--inria-sans-20-regular-line-height);
+    }
+
+    .title {
+        font-family: var(--inria-sans-26-regular-family);
+        font-size: var(--inria-sans-26-regular-size);
+        font-weight: var(--inria-sans-26-regular-weight);
+        line-height: var(--inria-sans-26-regular-line-height);
+    }
+
+    .post-text {
+        height: 160px;
+        width: 450px;
+
+        font-family: var(--inria-sans-20-regular-family);
+        font-size: var(--inria-sans-20-regular-size);
+        font-weight: var(--inria-sans-20-regular-weight);
+        line-height: var(--inria-sans-20-regular-line-height);
+    }
+
+    .add-post-box {
+        padding: 33px 60px 41px;
     }
 }
