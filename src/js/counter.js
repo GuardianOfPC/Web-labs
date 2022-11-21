@@ -1,36 +1,16 @@
-const counterElement = document.querySelector('.counter');
-counterElement.style.display = 'block';
+const increaseButtonElement = [...document.querySelectorAll(".increaseCountIcon")];
+const countElements = [...document.querySelectorAll('.counter-text')];
+const decreaseButtonElement = [...document.querySelectorAll(".decreaseCountIcon")];
 
-class Counter {
-    #count = 0;
+const countArray = countElements.map(e => parseInt(e.textContent));
 
-    constructor(counter) {
-        this.countElement = counter.querySelector('span');
-        this.increaseButtonElement = counter.querySelector(".increaseCountIcon");
-        this.decreaseButtonElement = counter.querySelector(".decreaseCountIcon");
-
-        // Initializes count
-        this.#count = parseInt(this.countElement.textContent);
-
-        // Adds event listener
-        this.increaseButtonElement.addEventListener('click', this.increaseCount);
-        this.decreaseButtonElement.addEventListener('click', this.decreaseCount);
-    }
-
-    updateCounter() {
-        this.countElement.textContent = this.#count;
-    }
-
-    increaseCount = () => {
-        this.#count = this.#count + 1;
-        this.updateCounter();
-    }
-
-    decreaseCount = () => {
-        this.#count = this.#count - 1;
-        this.updateCounter();
-    }
-}
-
-// Использование
-const counter = new Counter(counterElement);
+increaseButtonElement.forEach((b, index) => {
+    b.addEventListener('click', () => {
+        countElements[index].innerHTML = +(countElements[index].innerHTML) + 1
+    })
+})
+decreaseButtonElement.forEach((b, index) => {
+    b.addEventListener('click', () => {
+        countElements[index].innerHTML = +(countElements[index].innerHTML) - 1
+    })
+})

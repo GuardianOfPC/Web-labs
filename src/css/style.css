@@ -183,7 +183,7 @@ nav {
 footer {
     background-color: var(--dark-slate-gray-2);
     width: 100%;
-    bottom:0;
+    height: 160px;
 }
 
 .footer-box {
@@ -330,6 +330,8 @@ footer {
 
 .counter {
     margin-right: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 img:hover {
@@ -346,6 +348,7 @@ img:hover {
 }
 
 .counter-text {
+    text-align: center;
     color: white;
 }
 
