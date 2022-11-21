@@ -112,6 +112,29 @@ nav {
     border-radius: 50%;
 }
 
+.increaseCountIcon {
+    place-content: center;
+    background: transparent;
+    border: 1px solid var(--dark-slate-gray);
+    border-radius: 10px;
+
+}
+
+.increaseCountIcon:hover {
+    background-color: var(--dark-slate-gray)
+}
+
+.decreaseCountIcon {
+    place-content: center;
+    background: transparent;
+    border: 1px solid var(--dark-slate-gray);
+    border-radius: 10px;
+}
+
+.decreaseCountIcon:hover {
+    background-color: var(--dark-slate-gray)
+}
+
 .main-box {
     margin: 30px auto;
     max-width: 1400px
@@ -160,7 +183,7 @@ nav {
 footer {
     background-color: var(--dark-slate-gray-2);
     width: 100%;
-    bottom:0;
+    height: 160px;
 }
 
 .footer-box {
@@ -210,13 +233,13 @@ footer {
     padding: 0 0 0 30px;
     display: flex;
     align-items: flex-start;
-    column-gap: 200px;
 }
 
 .add-post-box {
     background-color: var(--black);
     border-radius: 10px;
     padding: 33px 100px 41px;
+    margin-left: 40px;
     display: flex;
     align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
@@ -232,9 +255,16 @@ footer {
     border: 1px solid var(--dark-slate-gray);
 }
 
-.post-box-two {
+.post {
     margin-left: 30px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 805px;
+}
+
+.post-box-two {
     background-color: var(--black);
     padding: 19px 18px 19px 12px;
     display: flex;
@@ -298,6 +328,30 @@ footer {
     position: relative;
 }
 
+.counter {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+img:hover {
+    color: var(--dark-slate-gray)
+}
+
+.counter * {
+    font-size: 20px;
+    margin: 2px 0;
+}
+.counter > p {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter-text {
+    text-align: center;
+    color: white;
+}
+
 @media (max-width: 1399px) {
     .search-and-sm-box {
         margin-left: 200px;
@@ -352,7 +406,7 @@ footer {
         max-width: 90%;
     }
 
-    .post-box-two {
+    .post {
         max-width: 86%;
     }
 }
@@ -368,7 +422,7 @@ footer {
         max-width: 70%;
     }
 
-    .post-box-two {
+    .post {
         max-width: 67%;
     }
 
