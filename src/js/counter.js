@@ -1,8 +1,8 @@
-const increaseButtonElement = [...document.querySelectorAll(".increaseCountIcon")];
-const countElements = [...document.querySelectorAll('.counter-text')];
-const decreaseButtonElement = [...document.querySelectorAll(".decreaseCountIcon")];
+let increaseButtonElement = [...document.querySelectorAll(".increaseCountIcon")];
+let countElements = [...document.querySelectorAll('.counter-text')];
+let decreaseButtonElement = [...document.querySelectorAll(".decreaseCountIcon")];
 
-const countArray = countElements.map(e => parseInt(e.textContent));
+let countArray = countElements.map(e => parseInt(e.textContent));
 
 increaseButtonElement.forEach((b, index) => {
     b.addEventListener('click', () => {

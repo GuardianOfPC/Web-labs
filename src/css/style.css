@@ -136,7 +136,7 @@ nav {
 }
 
 .main-box {
-    margin: 30px auto;
+    margin: 0 auto 30px;
     max-width: 1400px
 }
 
