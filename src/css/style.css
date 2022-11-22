@@ -230,7 +230,6 @@ footer {
 }
 
 .post-add-post-positioning {
-    padding: 0 0 0 30px;
     display: flex;
     align-items: flex-start;
 }
@@ -240,6 +239,7 @@ footer {
     border-radius: 10px;
     padding: 33px 100px 41px;
     margin-left: 40px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
@@ -400,9 +400,14 @@ img:hover {
     .add-post-box {
         order: -1;
         margin-bottom: 30px;
+        margin-left: 74px;
     }
 
     .post-box {
+        max-width: 90%;
+    }
+
+    .post-box-two {
         max-width: 90%;
     }
 
@@ -419,6 +424,10 @@ img:hover {
     }
 
     .post-box {
+        max-width: 70%;
+    }
+
+    .post-box-two {
         max-width: 70%;
     }
 
@@ -457,5 +466,6 @@ img:hover {
 
     .add-post-box {
         padding: 33px 60px 41px;
+        margin-left: 50px;
     }
 }
