@@ -167,7 +167,7 @@ nav {
     border: 1px solid var(--dark-slate-gray);
     border-radius: 10px;
     padding: 26px 21px 602px 22px;
-    margin: 0 auto 10px;
+    margin: 10px auto 10px;
     max-width: 70%;
 }
 
@@ -229,20 +229,22 @@ footer {
     line-height: var(--inria-sans-26-regular-line-height);
 }
 
-.post-add-post-positioning {
-    display: flex;
-    align-items: flex-start;
+.sidebar {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 30%;
+    float: right;
 }
 
 .add-post-box {
     background-color: var(--black);
     border-radius: 10px;
-    padding: 33px 100px 41px;
-    margin-left: 40px;
-    margin-top: 30px;
-    display: flex;
-    align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
+    padding: 35px 100px 35px;
+}
+
+.add-post-box:hover {
+    background-color: var(--dark-slate-gray)
 }
 
 .post-box {
@@ -262,17 +264,6 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     max-width: 805px;
-}
-
-.post-box-two {
-    background-color: var(--black);
-    padding: 19px 18px 19px 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 10px;
-    border: 1px solid var(--dark-slate-gray);
-    max-width: 705px;
 }
 
 .avatar {
@@ -362,6 +353,16 @@ img:hover {
 }
 
 @media (max-width: 1100px) {
+
+    .add-post-box {
+        padding: 15px 50px 15px;
+    }
+
+    .sidebar {
+        width: 20%;
+        margin-left: 5px;
+    }
+
     .navigation {
         flex-direction: column;
         padding-top: 10px;
@@ -382,7 +383,7 @@ img:hover {
         padding-bottom: 10px;
     }
 
-    .post-add-post-positioning {
+    .main-box {
         column-gap: 10px;
     }
 
@@ -392,27 +393,21 @@ img:hover {
 }
 
 @media (max-width: 920px) {
-    .post-add-post-positioning {
+    .main-box {
         display: flex;
         flex-direction: column;
-    }
-
-    .add-post-box {
-        order: -1;
-        margin-bottom: 30px;
-        margin-left: 74px;
     }
 
     .post-box {
         max-width: 90%;
     }
 
-    .post-box-two {
-        max-width: 90%;
-    }
-
     .post {
         max-width: 86%;
+    }
+
+    .sidebar {
+        margin-left: 80px;
     }
 }
 
@@ -424,10 +419,6 @@ img:hover {
     }
 
     .post-box {
-        max-width: 70%;
-    }
-
-    .post-box-two {
         max-width: 70%;
     }
 
@@ -462,10 +453,5 @@ img:hover {
         font-size: var(--inria-sans-20-regular-size);
         font-weight: var(--inria-sans-20-regular-weight);
         line-height: var(--inria-sans-20-regular-line-height);
-    }
-
-    .add-post-box {
-        padding: 33px 60px 41px;
-        margin-left: 50px;
     }
 }
