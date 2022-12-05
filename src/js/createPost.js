@@ -11,7 +11,7 @@ addPostElement.addEventListener('click', () => {
         "                     src=\"../img/arrowUp.svg\"\n" +
         "                />\n" +
         "            </button>\n" +
-        "            <span class=\"counter-text\" data-createdAt=\"100\">10</span>\n" +
+        "            <span class=\"counter-text\" data-createdAt=\"100\">5</span>\n" +
         "            <button class=\"decreaseCountIcon\">\n" +
         "                <img\n" +
         "                        alt=\"\"\n" +
