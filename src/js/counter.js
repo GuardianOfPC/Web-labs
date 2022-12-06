@@ -1,20 +1,33 @@
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("increaseCountIcon")) {
-        e.target.parentElement.querySelector(".counter-text").innerText = +(e.target.parentElement.querySelector(".counter-text").innerText) + 1
+        let curValue = localStorage.getItem((+(e.target.parentElement.querySelector(".counter-text").id)).toString())
+
+        if (!curValue) {
+            let newValue = +(e.target.parentElement.querySelector(".counter-text").innerText) + 1
+            e.target.parentElement.querySelector(".counter-text").innerText = newValue
+            localStorage.setItem(e.target.parentElement.querySelector(".counter-text").id, newValue.toString())
+        }
+
+        let newValue = +curValue + 1
+
+        e.target.parentElement.querySelector(".counter-text").innerText = newValue
+
+        localStorage.setItem((+(e.target.parentElement.querySelector(".counter-text").id)).toString(), newValue.toString())
     }
 
     if (e.target.classList.contains("decreaseCountIcon")) {
-        e.target.parentElement.querySelector(".counter-text").innerText = +(e.target.parentElement.querySelector(".counter-text").innerText) - 1
-    }
+        let curValue = localStorage.getItem((+(e.target.parentElement.querySelector(".counter-text").id)).toString())
 
-    if (e.target.tagName === 'IMG') {
-        if (e.target.parentElement.classList.contains("increaseCountIcon")) {
-            e.target.parentElement.parentElement.parentElement.querySelector(".counter-text").innerText = +(e.target.parentElement.parentElement.parentElement.querySelector(".counter-text").innerText) + 1
+        if (!curValue) {
+            let newValue = +(e.target.parentElement.querySelector(".counter-text").innerText) - 1
+            e.target.parentElement.querySelector(".counter-text").innerText = newValue
+            localStorage.setItem(e.target.parentElement.querySelector(".counter-text").id, newValue.toString())
         }
 
-        if (e.target.parentElement.classList.contains("decreaseCountIcon")) {
-            e.target.parentElement.parentElement.parentElement.querySelector(".counter-text").innerText = +(e.target.parentElement.parentElement.parentElement.querySelector(".counter-text").innerText) - 1
-        }
-    }
+        let newValue = +curValue - 1
 
+        e.target.parentElement.querySelector(".counter-text").innerText = newValue
+
+        localStorage.setItem(e.target.parentElement.querySelector(".counter-text").id, newValue.toString())
+    }
 });

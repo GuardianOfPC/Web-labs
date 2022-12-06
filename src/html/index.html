@@ -46,13 +46,18 @@
                 <img
                         alt=""
                         src="../img/arrowUp.svg"
+                        style="pointer-events: none;"
                 />
             </button>
-            <span class="counter-text">5</span>
+            <span id="1" class="counter-text" data-postNum="1">0</span>
+            <script>
+                document.getElementById("1").innerHTML = localStorage.getItem("1")
+            </script>
             <button class="decreaseCountIcon">
                 <img
                         alt=""
                         src="../img/arrowDown.svg"
+                        style="pointer-events: none;"
                 />
             </button>
         </div>
@@ -69,16 +74,22 @@
     </div>
     <div class="post">
         <div class="counter">
-            <button class="increaseCountIcon">
-                <img alt=""
-                     src="../img/arrowUp.svg"
+            <button type="button" class="increaseCountIcon">
+                <img
+                        alt=""
+                        src="../img/arrowUp.svg"
+                        style="pointer-events: none;"
                 />
             </button>
-            <span class="counter-text" data-createdAt="100">10</span>
+            <span id="2" class="counter-text" data-postNum="2">0</span>
+            <script>
+                document.getElementById("2").innerHTML = localStorage.getItem("2")
+            </script>
             <button class="decreaseCountIcon">
                 <img
                         alt=""
                         src="../img/arrowDown.svg"
+                        style="pointer-events: none;"
                 />
             </button>
         </div>
