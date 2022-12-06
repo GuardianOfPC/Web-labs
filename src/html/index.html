@@ -35,35 +35,36 @@
     </div>
 </nav>
 <div class="main-box">
-    <div class="post-add-post-positioning">
-        <div class="post">
-            <div class="counter">
-                <button class="increaseCountIcon">
-                    <img alt=""
-                         src="../img/arrowUp.svg"
-                    />
-                </button>
-                <span class="counter-text">5</span>
-                <button class="decreaseCountIcon">
-                    <img
-                            alt=""
-                            src="../img/arrowDown.svg"
-                    />
-                </button>
-            </div>
-            <div class="post-box">
-                <div class="top-side-of-post">
-                    <div class="avatar"></div>
-                    <p class="author-name-text">Amogus</p>
-                </div>
-                <div class="bottom-side-of-post">
-                    <p class="title">Who is sus?</p>
-                    <p class="post-text">Mogus seams kinda sus</p>
-                </div>
-            </div>
-        </div>
-        <div class="add-post-box">
+    <div class="sidebar">
+        <button class="add-post-box">
             <p class="add-post-text">Добавить пост</p>
+        </button>
+    </div>
+    <div class="post">
+        <div class="counter">
+            <button class="increaseCountIcon">
+                <img
+                        alt=""
+                        src="../img/arrowUp.svg"
+                />
+            </button>
+            <span class="counter-text">5</span>
+            <button class="decreaseCountIcon">
+                <img
+                        alt=""
+                        src="../img/arrowDown.svg"
+                />
+            </button>
+        </div>
+        <div class="post-box">
+            <div class="top-side-of-post">
+                <div class="avatar"></div>
+                <p class="author-name-text">Amogus</p>
+            </div>
+            <div class="bottom-side-of-post">
+                <p class="title">Who is sus?</p>
+                <p class="post-text">Mogus seams kinda sus</p>
+            </div>
         </div>
     </div>
     <div class="post">
@@ -73,16 +74,15 @@
                      src="../img/arrowUp.svg"
                 />
             </button>
-            <span class="counter-text">10</span>
+            <span class="counter-text" data-createdAt="100">10</span>
             <button class="decreaseCountIcon">
                 <img
                         alt=""
                         src="../img/arrowDown.svg"
                 />
             </button>
-            <script src="../js/counter.js"></script>
         </div>
-        <div class="post-box-two">
+        <div class="post-box">
             <div class="top-side-of-post">
                 <div class="avatar"></div>
                 <p class="author-name-text">Mogus</p>
@@ -100,5 +100,6 @@
     </div>
 </footer>
 <script src="../js/counter.js"></script>
+<script src="../js/createPost.js"></script>
 </body>
 </html>
