@@ -40,11 +40,8 @@ addPostElement.addEventListener('click', () => {
             </div>
         </div>`;
 
-    console.log(idNum)
-    let postNum = `${idNum}.${idNum}`
-
     let object = {
-        id: postNum,
+        id: idNum,
         randomNum: randomNum,
         title: title,
         rating: 0
@@ -74,12 +71,12 @@ if (!localStorage.getItem("posts")) {
 else {
     posts = JSON.parse(localStorage.getItem("posts"))
 }
-console.log(posts)
 
 for (let i = 0; i < posts.length; i++) {
     let count = posts[i].rating
     let randomNum = posts[i].randomNum
     let title = posts[i].title
+    let id = posts[i].id
 
     let div = document.createElement('div');
     div.className = "post";
@@ -91,7 +88,7 @@ for (let i = 0; i < posts.length; i++) {
                         style="pointer-events: none;"
                 />
             </button>
-            <span class="counter-text">${count}</span>
+            <span id="${id}" class="counter-text">${count}</span>
             <button class="decreaseCountIcon">
                 <img
                         alt=""
