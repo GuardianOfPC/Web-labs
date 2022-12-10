@@ -1,3 +1,5 @@
+import { fishText } from '../../node_modules/fish-text/fish-text.js';
+
 const sideBar = document.querySelector(".sidebar")
 const addPostElement = document.querySelector(".add-post-box")
 
@@ -7,10 +9,15 @@ addPostElement.addEventListener('click', () => {
 
     let div = document.createElement('div');
     div.className = "post";
+
     idNum = (idNum + 1)
-    let randomNum = Math.random()
-    let title = Math.random()
     localStorage.setItem("idNum", idNum)
+
+    let authorName = fishText.getNames({count: 1, lang: 'rus', dataType: 'string', type: 'full'});
+    let title = fishText.getRandomRangeWords({min: 1, max: 2, lang: 'rus', dataType: 'string', repeat: false});
+    let textContent = fishText.getRandomRangeWords({min: 10, max: 30, lang: 'rus', dataType: 'string', repeat: false});
+
+    console.log(textContent+"1")
 
     div.innerHTML = `<div class="counter">
             <button class="increaseCountIcon">
@@ -32,18 +39,19 @@ addPostElement.addEventListener('click', () => {
         <div class="post-box">
             <div class="top-side-of-post">
                 <div class="avatar"></div>
-                <p class="author-name-text">${randomNum}</p>
+                <p class="author-name-text">${authorName}</p>
             </div>
             <div class="bottom-side-of-post">
                 <p class="title">${title}</p>
-                <p class="post-text">Mogus seams kinda sus</p>
+                <p class="post-text">${textContent}</p>
             </div>
         </div>`;
 
     let object = {
         id: idNum,
-        randomNum: randomNum,
+        author: authorName,
         title: title,
+        text: textContent,
         rating: 0
     }
 
@@ -73,10 +81,12 @@ else {
 }
 
 for (let i = 0; i < posts.length; i++) {
+    console.log(posts[i])
     let count = posts[i].rating
-    let randomNum = posts[i].randomNum
+    let authorName = posts[i].author
     let title = posts[i].title
     let id = posts[i].id
+    let text = posts[i].text
 
     let div = document.createElement('div');
     div.className = "post";
@@ -100,11 +110,11 @@ for (let i = 0; i < posts.length; i++) {
         <div class="post-box">
             <div class="top-side-of-post">
                 <div class="avatar"></div>
-                <p class="author-name-text">${randomNum}</p>
+                <p class="author-name-text">${authorName}</p>
             </div>
             <div class="bottom-side-of-post">
                 <p class="title">${title}</p>
-                <p class="post-text">Mogus seams kinda sus</p>
+                <p class="post-text">${text}</p>
             </div>
         </div>`;
 

@@ -66,6 +66,8 @@ document.addEventListener("click", (e) => {
             e.target.parentElement.querySelector(".counter-text").innerText = newValue
 
             localStorage.setItem(e.target.parentElement.querySelector(".counter-text").id, newValue.toString())
+
+            return
         }
 
         let postsForCounters
