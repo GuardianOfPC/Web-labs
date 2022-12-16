@@ -88,7 +88,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getWords function result](./readme-images/example--result-getWords.png)
+![getWords function result](readme-images/example--result-getWords.png)
 
 ##### **SPECIAL PARAMETERS!**
 
@@ -112,7 +112,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getWords function result](./readme-images/example--result-getRandomRangeWords.png)
+![getWords function result](readme-images/example--result-getRandomRangeWords.png)
 
 ##### **SPECIAL PARAMETERS!**
 
@@ -137,7 +137,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getCities function result](./readme-images/example--result-getCities.png)
+![getCities function result](readme-images/example--result-getCities.png)
 
 ##### **SPECIAL PARAMETERS!**
 
@@ -160,7 +160,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getRandomRangeCities function result](./readme-images/example--result-getRandomRangeCities.png)
+![getRandomRangeCities function result](readme-images/example--result-getRandomRangeCities.png)
 
 ##### **SPECIAL PARAMETERS!**
 
@@ -185,7 +185,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getCountries function result](./readme-images/example--result-getCountries.png)
+![getCountries function result](readme-images/example--result-getCountries.png)
 
 ##### **SPECIAL PARAMETERS!**
 
@@ -208,7 +208,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getRandomRangeCountries function result](./readme-images/example--result-getRandomRangeCountries.png)
+![getRandomRangeCountries function result](readme-images/example--result-getRandomRangeCountries.png)
 
 ##### **SPECIAL PARAMETERS!**
 
@@ -234,7 +234,7 @@ fishText.getWords({});
 ```
 * **result**
 
-![getCountries function result](./readme-images/example--result-getNames.png)
+![getCountries function result](readme-images/example--result-getNames.png)
 
 ##### **SPECIAL PARAMETERS!**
 

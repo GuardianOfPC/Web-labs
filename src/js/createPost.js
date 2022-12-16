@@ -1,4 +1,4 @@
-import { fishText } from '../../node_modules/fish-text/fish-text.js';
+import { fishText } from '../modules/fish-text/fish-text.js';
 
 const sideBar = document.querySelector(".sidebar")
 const addPostElement = document.querySelector(".add-post-box")
