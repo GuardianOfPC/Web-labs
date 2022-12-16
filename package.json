@@ -3,6 +3,5 @@
   "version": "1.0.0",
   "type": "module",
   "devDependencies": {
-    "fish-text": "^2.0.1"
   }
 }
