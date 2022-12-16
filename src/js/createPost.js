@@ -1,4 +1,4 @@
-import { fishText } from '../modules/fish-text/fish-text.js';
+import { fishText } from 'https://unpkg.com/fish-text@2.0.1/fish-text.js';
 
 const sideBar = document.querySelector(".sidebar")
 const addPostElement = document.querySelector(".add-post-box")
