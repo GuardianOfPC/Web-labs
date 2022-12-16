@@ -15,7 +15,7 @@ addPostElement.addEventListener('click', () => {
 
     let authorName = fishText.getNames({count: 1, lang: 'rus', dataType: 'string', type: 'full'});
     let title = fishText.getRandomRangeWords({min: 1, max: 2, lang: 'rus', dataType: 'string', repeat: false});
-    let textContent = fishText.getRandomRangeWords({min: 10, max: 30, lang: 'rus', dataType: 'string', repeat: false});
+    let textContent = fishText.getRandomRangeWords({min: 10, max: 100, lang: 'rus', dataType: 'string', repeat: false});
 
     console.log(textContent+"1")
 
@@ -43,7 +43,7 @@ addPostElement.addEventListener('click', () => {
             </div>
             <div class="bottom-side-of-post">
                 <p class="title">${title}</p>
-                <p class="post-text">${textContent}</p>
+                <p>${textContent}</p>
             </div>
         </div>`;
 
@@ -114,7 +114,7 @@ for (let i = 0; i < posts.length; i++) {
             </div>
             <div class="bottom-side-of-post">
                 <p class="title">${title}</p>
-                <p class="post-text">${text}</p>
+                <p>${text}</p>
             </div>
         </div>`;
 

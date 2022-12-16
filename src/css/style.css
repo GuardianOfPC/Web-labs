@@ -254,6 +254,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid var(--dark-slate-gray);
+    max-width: 705px;
 }
 
 .post {
@@ -316,6 +317,11 @@ footer {
     flex-direction: column;
     margin-left: 13px;
     position: relative;
+    color: var(--white);
+    font-family: var(--inria-sans-26-regular-family);
+    font-size: var(--inria-sans-26-regular-size);
+    font-weight: var(--inria-sans-26-regular-weight);
+    line-height: var(--inria-sans-26-regular-line-height);
 }
 
 .counter {
