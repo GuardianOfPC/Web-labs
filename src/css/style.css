@@ -281,6 +281,7 @@ footer {
     display: flex;
     text-align: center;
     margin-top: 4px;
+    white-space: nowrap;
     font-family: var(--inria-sans-26-regular-family);
     font-size: var(--inria-sans-26-regular-size);
     font-weight: var(--inria-sans-26-regular-weight);
